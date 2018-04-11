@@ -1,0 +1,130 @@
+/*Apply to all*/
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Left side navigation styles*/
+aside {
+  box-sizing: border-box;
+  float: left;
+  color: #67738B;
+  background-color: #374050;
+  display: block;
+  width: 16em;
+}
+
+.aside-profile-pic {
+  text-align: center;
+  padding: 2em;
+}
+h4 {
+  margin-left: 1em;
+}
+
+.aside-btn {
+  border-left: 3px solid #374050;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding: .5em;
+  padding-left: 1.25em; 
+  color: #A2ACBD;
+  text-decoration: none;
+}
+
+.aside-svg {
+  height: 18px;
+  margin-right: .75em;
+  margin-bottom: 3px;
+}
+
+.aside-btn:hover {
+  border-left: 3px solid white;
+  box-shadow: inset 5px white;
+  background-color: #2B3240;
+  color: white;
+}
+
+.check-box1:hover {
+  background-size: 30px;
+  background-image: url("images/correct-symbol.svg");
+}
+.check-box2
+.check-box3
+.check-box4
+
+
+section {
+  border-bottom: 2px solid yellow;
+}
+
+header {
+  box-sizing: border-box;
+  float: right;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 5em;
+  width: calc(100% - 16em);
+  border: 1px solid lightgray;
+}
+
+.header {
+  border-left: .5px solid lightgray;
+  height: 5em;
+  width: 5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1.5em;
+}
+
+.header-menu {
+  border-left: 0;
+  border-right: .5px solid lightgray;
+  background-image: url(images/four-horizontal-lines-with-down-arrow.svg);
+}
+
+.header-menu:hover {
+  background-color: #49A2F3;
+  background-image: url(images/four-horizontal-lines-with-down-arrow1.svg);
+}
+
+.header-text-input {
+    outline: none;
+    border: 0px;
+    margin-left: 3.5em;
+    flex: 1;
+}
+
+.header-add-friend {
+  background-image: url(images/man-user.svg);
+}
+
+.header-add-friend:hover {
+  background-color: #49A2F3;
+  background-image: url(images/new-user-hover.svg);
+}
+
+.header-calendar {
+  background-image: url(images/add-event.svg)
+}
+
+.header-calendar:hover {
+  background-color: #49A2F3;
+  background-image: url(images/add-event-hover.svg);
+}
+
+.header-squares {
+  background-image: url(images/menu1.svg);
+}
+
+.header-squares:hover {
+  background-color: #49A2F3;
+  background-image: url(images/menu1-hover.svg);
+}
+
+/*Main content nav*/
+h1 {
+  color: #4E515D;
+  font-weight: 400;
+}
