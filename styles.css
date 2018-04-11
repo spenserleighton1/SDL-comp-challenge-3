@@ -55,7 +55,6 @@ h4 {
 
 
 section {
-  border-bottom: 2px solid yellow;
 }
 
 header {
@@ -125,6 +124,7 @@ header {
 
 /*Main content nav*/
 h1 {
+  margin-top: 0;
   color: #4E515D;
   font-weight: 400;
 }
