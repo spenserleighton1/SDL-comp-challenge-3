@@ -11,7 +11,7 @@ aside {
   color: #67738B;
   background-color: #374050;
   display: block;
-  width: 16em;
+  width: 14em;
 }
 
 .aside {
@@ -66,7 +66,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   height: 5em;
-  width: calc(100% - 16em);
+  width: calc(100% - 14em);
   border: 1px solid lightgray;
 }
 
@@ -130,7 +130,7 @@ header {
   padding: 3em 3em 0 3em;
   float: right;
   box-sizing: border-box;
-  width: calc(100% - 16em);
+  width: calc(100% - 14em);
   height: 13em;
   color: #4E515D;
   font-weight: 400;
@@ -141,24 +141,26 @@ h1 {
 }
 
 .h1-icons {
+  margin-right: 0.75em;
+  font-weight: 700;
+  color: #4E515D;
+  text-decoration: none;
   float: right;
+  display: inline-flex;
+  align-items: center;
+  padding: .5em;
+  border-radius: 25px 25px 25px 25px;
+  border: 2px solid lightgray;
   }
 
-.header-icon-flex {
-  float: right;
-  margin-bottom: 30px;
+.h1-icons:hover {
+  border: 2px solid #49A2F3;
 }
 
 .header-icon {
-  border-radius: 50%;
-  border: 1px solid lightgray;
-  padding: .75em;
   height: 1em;
 }
 
-.header-icon:hover {
-  border: 1px solid #49A2F3;
-}
 
 .location-icon {
   color: #8C95A3;
@@ -192,10 +194,11 @@ h1 {
   background-color: #EDF2F6;
   box-sizing: border-box;
   float: right;
-  width: calc(100% - 16em);
+  width: calc(100% - 14em);
   display: flex;
   justify-content: space-around;
-  height: 30em;
+  height: 20em;
+  border-bottom: 2px solid lightgray;
 }
 
 .circle-graphs {
@@ -204,14 +207,12 @@ h1 {
   justify-content: space-around;
   align-items: center;
   width: 60%;
+  /*width: 518px;*/
 }
 
 .circle {
-  /*border: 1px solid black;*/
-  /*height: 15em;*/
   width: 30%;
 }
-
 
 .chart-text {
   font-size: 1em;
@@ -244,10 +245,19 @@ h1 {
 }
 
 .bar {
-  border: 1px solid black;
-  height: 15em;
-  width: 37em;
+  padding: 20px;
+  width: 80%;
+  /*width: 360px*/
 }
+.chart div {
+  font: 10px sans-serif;
+  background-color: #67B8BF;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
 
 .stats-button {
   margin: 0;
@@ -259,6 +269,16 @@ h1 {
 .stats-button p {
   margin: 0.5em;
 }
+/*
+.gray-line,  {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  border-bottom: 2px solid gray;
+  height: 20px;
+}*/
+
 
 /*Lower Section styles*/
 .bottom-content {
@@ -316,7 +336,6 @@ th {
   color: #4E515D;
   background-color: #EDF2F6;
   width: 18em;
-  height: 100vh;
   float: right;
 }
 
@@ -354,6 +373,8 @@ th {
 }
 
 .social-media-links {
+  font-weight: 700;
+  margin-top: 2em;
   text-decoration: none;
   color: #4E515D;
   display: flex;
@@ -373,17 +394,23 @@ th {
   display: inline-block;
   border-radius: 3px 0 0 3px;
   width: 14em
+    /*border-bottom: 2px solid gray;*/
 }
 
 .social-media p {
+  color: #717D93;
   max-width: 31ch;
   font-size: 0.95em;
 }
 
+.social-media-article {
+  width: 17em;
+  border-bottom: 2px solid lightgray;
+}
 
 .copy-button {
   box-shadow: 0px 0px 2px 0px rgba(150,148,150,1);
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
   border: none;
   color: white;
   background-color: #67B8BF;
@@ -395,7 +422,26 @@ th {
   background-color: #4babb4;
 }
 
+@media (max-width: 1060px) {
 
+/*  .bottom-content {
+    flex-flow: column;
+  }*/
 
+  table {
+    width: 100%;
+  }
 
+  .media-buttons,
+  .media-links {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .social-media {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
+}
