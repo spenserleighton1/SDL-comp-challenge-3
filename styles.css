@@ -21,9 +21,11 @@ aside {
 .aside-profile-pic {
   text-align: center;
   padding: 2em;
+  border-bottom: 1px solid white;
 }
 
 .profile-pic {
+  width: 90px;
   border-radius: 50%;
 }
 
@@ -174,10 +176,10 @@ h1 {
 }
 
 .sub-header-links {
-  margin: 1em;
+  margin: 0.5%;
   border-bottom: 2px solid white;
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 700;
   color: #8C95A3;
 }
 
@@ -186,6 +188,7 @@ h1 {
 }
 
 .sub {
+  width: 100%;
   position: absolute;
   bottom: 2px;
 }
@@ -438,10 +441,62 @@ th {
     justify-content: space-between;
   }
 
+  .social-media-button {
+    margin: 0.25em 0.5em 0 0.5em;
+  }
+
+  .social-media-article {
+    margin: 0.25em 0.5em 0 0.5em;
+  }
+
   .social-media {
     width: 100%;
     display: flex;
     flex-flow: column;
+  }
+
+/*  .sub-header-links {
+    font-size: 0.90em;
+  }*/
+
+}
+
+@media (max-width: 910px) {
+  
+  aside {
+    width: 5em;
+    height: 5em;
+  }
+
+  .aside {
+    padding: 0;
+    display: none;
+  }
+
+  header {
+    width: calc(100% - 5em);
+  }
+
+  .sub-header,
+  .bottom-content,
+  .stats {
+    width: 100%
+  }
+
+  .profile-pic {
+    /*border-bottom: 0px solid transparent;*/
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    width: 3em;
+  }
+
+
+
+  .aside-profile-pic p,
+  .as  {
+    display: none;
+
   }
 
 }
