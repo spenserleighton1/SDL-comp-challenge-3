@@ -1,6 +1,11 @@
 /*Apply to all*/
 * {
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #374050;
 }
 
 /*Left side navigation styles*/
@@ -10,13 +15,25 @@ aside {
   color: #67738B;
   background-color: #374050;
   display: block;
-  width: 16em;
+  width: 14em;
+  height: 170.5vh;
+}
+
+.aside {
+  border-bottom: 2px solid #2B3240;
 }
 
 .aside-profile-pic {
   text-align: center;
   padding: 2em;
+  border-bottom: 2px solid #2B3240;
 }
+
+.profile-pic {
+  width: 90px;
+  border-radius: 50%;
+}
+
 h4 {
   margin-left: 1em;
 }
@@ -40,7 +57,6 @@ h4 {
 
 .aside-btn:hover {
   border-left: 3px solid white;
-  box-shadow: inset 5px white;
   background-color: #2B3240;
   color: white;
 }
@@ -49,22 +65,16 @@ h4 {
   background-size: 30px;
   background-image: url("images/correct-symbol.svg");
 }
-.check-box2
-.check-box3
-.check-box4
-
-
-section {
-}
 
 header {
+  background-color: white;
   box-sizing: border-box;
   float: right;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 5em;
-  width: calc(100% - 16em);
+  width: calc(100% - 14em);
   border: 1px solid lightgray;
 }
 
@@ -89,10 +99,15 @@ header {
 }
 
 .header-text-input {
-    outline: none;
-    border: 0px;
-    margin-left: 3.5em;
-    flex: 1;
+  outline: none;
+  border: 0px;
+  margin-left: 3.5em;
+  flex: 1;
+}
+
+.header-text-input2 {
+  display: none;
+  margin-left: 3.5em;
 }
 
 .header-add-friend {
@@ -123,8 +138,471 @@ header {
 }
 
 /*Main content nav*/
-h1 {
-  margin-top: 0;
+.sub-header {
+  background-color: white;
+  position: relative;
+  padding: 2em;
+  float: right;
+  box-sizing: border-box;
+  width: calc(100% - 14em);
+  height: 13em;
   color: #4E515D;
   font-weight: 400;
+}
+
+
+h1 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.h1-icons {
+  margin-right: 0.75em;
+  font-weight: 700;
+  color: #4E515D;
+  text-decoration: none;
+  float: right;
+  display: inline-flex;
+  align-items: center;
+  padding: .5em;
+  border-radius: 25px 25px 25px 25px;
+  border: 2px solid lightgray;
+  }
+
+.h1-icons:hover {
+  border: 2px solid #49A2F3;
+}
+
+.header-icon {
+  height: 1em;
+}
+
+
+.location-icon {
+  margin-top: 0.5em;
+  font-size: 1em;
+  color: #8C95A3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.location-blue {
+  font-size: 1em;
+  color: #49A2F3;
+}
+
+.sub-header-links {
+  margin: 0.5%;
+  border-bottom: 2px solid white;
+  text-decoration: none;
+  font-weight: 700;
+  color: #8C95A3;
+}
+
+.sub-header-links:hover {
+  border-bottom: 2px solid #49A2F3;
+}
+
+.sub {
+  width: 85%;
+  position: absolute;
+  bottom: 2px;
+  padding-right: 10px;
+}
+/*Styling for my two badass graph sections*/
+.stats {
+  background-color: #EDF2F6;
+  box-sizing: border-box;
+  min-width: calc(100% - 14em);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px; 
+  min-height: 20em;
+  /*border-bottom: 2px solid lightgray;*/
+}
+
+.bar-graph {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 21em;
+  margin-bottom: 2em;
+}
+
+.bar {
+  width: 21em;
+}
+
+.circle-graphs {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 576px;
+  min-width: 560px;
+  margin-bottom: 2em;
+}
+
+.circle {
+  width: 12em;
+}
+
+.chart-text {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.chart-number {
+  font-size: 0.6em;
+  line-height: 1;
+  text-anchor: middle;
+  transform: translateY(-0.25em);
+}
+
+.chart-label {
+  color: #8C95A3;
+  font-size: 0.2em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  transform: translateY(0.7em);
+}
+
+.donut-segment {
+   stroke-linecap: round;
+}
+
+.chart div {
+  font: 10px sans-serif;
+  background-color: #67B8BF;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+
+.stats-button {
+  margin: 0;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.stats-button p {
+  margin: 0.5em;
+}
+
+.center-divide-button {
+  padding: 0.5em;
+  border-radius: 50%;
+  position: relative;
+  bottom: 55px;
+}
+
+.divide-button {
+  display: flex;
+  justify-content: center;
+  background-color: #EDF2F6;
+}
+
+/*Styles for my totally rad table*/
+.bottom-content {
+  background-color: #EDF2F6;
+  padding: 1em;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+table {
+  background-color: white;
+  color: #717D93;
+  border-collapse: collapse;
+  width: calc(100% - 25em);
+  border-radius: 5px;
+}
+
+td, th {
+  font-size: 0.95em;
+  text-align: left;
+  padding: 1.5em;
+}
+
+td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+th {
+  background-color: #717D93;
+  color: white;
+}
+
+.th-left {
+  border-top-left-radius: 5px;
+}
+
+.th-right {
+  border-top-right-radius: 5px;
+}
+
+.edit-button {
+  height: 2.5em;
+  width: 4em;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: #808B9E;
+}
+
+.edit-button:hover {
+  background-color: #636e83;
+}
+
+.table-left {
+  font-weight: 700;
+  width: 10em;
+}
+
+/*Styles for social media buttons and links*/
+.social-media {
+  text-align: center
+  color: #4E515D;
+  background-color: #EDF2F6;
+  width: 17em;
+  /*width: 9%;*/
+  float: right;
+}
+
+
+
+.social-media-button {
+  font-weight: 700;
+  border-radius: 5px;
+  color: white;
+  width: 17em;
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+.media-buttons {
+  margin: 0;
+}
+
+.facebook {
+  background-color: #4F6DBB;
+}
+
+.facebook:hover {
+  background-color: #405da5;
+}
+
+.twitter {
+  background-color: #4A9FEC;
+}
+
+.twitter:hover {
+  background-color: #2f8fe9;
+}
+
+.linkedin {
+  background-color: #3175B0;
+}
+
+.linkedin:hover {
+  background-color: #275d8b;
+}
+
+.social-media-links {
+  font-weight: 700;
+  margin-top: 2em;
+  text-decoration: none;
+  color: #4E515D;
+  display: flex;
+  align-items: center;
+}
+
+.social-media img {
+  margin-right: 0.5em;
+}
+
+.social-media input {
+  box-shadow: 0px 0px 2px 0px rgba(150,148,150,1);
+  font-size: 0.95em;
+  height: 2em;
+  border: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 3px 0 0 3px;
+  width: 14em
+}
+
+.social-media p {
+  color: #717D93;
+  max-width: 31ch;
+  font-size: 0.95em;
+}
+
+.social-media-article {
+  width: 17em;
+  border-bottom: 2px solid lightgray;
+}
+
+.copy-button {
+  box-shadow: 0px 0px 2px 0px rgba(150,148,150,1);
+  margin-bottom: 2.5em;
+  border: none;
+  color: white;
+  background-color: #67B8BF;
+  border-radius: 0 3px 3px 0;
+  height: 28px
+}
+
+.copy-button:hover {
+  background-color: #4babb4;
+}
+
+/*Media queries*/
+@media (max-width: 1060px) {
+
+  table {
+    width: 100%;
+  }
+
+  .media-buttons,
+  .media-links {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-media-button,
+  .social-media-article {
+    margin-top: 0.5em;
+  }
+
+  .social-media {
+    width: 96%;
+    display: flex;
+    flex-flow: column;
+  }
+
+}
+
+@media (max-width: 910px) {
+
+  table {
+    /*width: 95%;*/
+    margin: 2%;
+  }
+  
+  aside {
+    width: 5em;
+    height: 5em;
+  }
+
+  .aside {
+    padding: 0;
+    display: none;
+  }
+
+  header {
+    width: calc(100% - 5em);
+  }
+
+  .sub-header,
+  .bottom-content,
+  .stats {
+    width: 100%;
+  }
+
+  .bottom-content {
+    padding: 0;
+  }
+
+  .profile-pic {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    width: 3em;
+  }
+
+  .aside-profile-pic {
+    border-bottom: 0;
+  }
+
+  .pro-pic-name {
+    display: none;
+  }
+
+
+
+  .stats {
+    justify-content: column;
+    align-items: column;
+  }
+
+  @media (max-width: 650px) {
+
+    .social-media-button span,
+    .header-add-friend,
+    .header-squares,
+    .header-calendar,
+    .social-media-article {
+      display: none;
+    }
+
+    .social-media-button {
+      margin-bottom: 1.5em;
+    }
+
+    .circle-graphs {
+      max-width: 320px;
+      min-width: 320px;
+      flex-flow: column;
+    }
+
+  }
+
+    @media (max-width: 435px) {
+
+    td {
+      white-space: nowrap;
+    }
+
+    .sub,
+    .h1-icons,
+    .header-text-input {
+      display: none;
+    }
+
+    .sub-header {
+      height: 10em;
+    }
+
+    .header-text-input2 {
+      display: block;
+      border: none;
+    }
+
+    header {
+      flex-direction: row-reverse;
+    }
+
+    .header-menu {
+      border-left: 0.5px solid lightgray;
+      border-right: 0;
+    }
+
+    }
+  }
+
 }
