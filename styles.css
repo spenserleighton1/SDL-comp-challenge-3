@@ -4,6 +4,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-color: #374050;
+}
+
 /*Left side navigation styles*/
 aside {
   box-sizing: border-box;
@@ -12,6 +16,7 @@ aside {
   background-color: #374050;
   display: block;
   width: 14em;
+  height: 170.5vh;
 }
 
 .aside {
@@ -21,7 +26,7 @@ aside {
 .aside-profile-pic {
   text-align: center;
   padding: 2em;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid #2B3240;
 }
 
 .profile-pic {
@@ -62,6 +67,7 @@ h4 {
 }
 
 header {
+  background-color: white;
   box-sizing: border-box;
   float: right;
   display: flex;
@@ -93,10 +99,15 @@ header {
 }
 
 .header-text-input {
-    outline: none;
-    border: 0px;
-    margin-left: 3.5em;
-    flex: 1;
+  outline: none;
+  border: 0px;
+  margin-left: 3.5em;
+  flex: 1;
+}
+
+.header-text-input2 {
+  display: none;
+  margin-left: 3.5em;
 }
 
 .header-add-friend {
@@ -128,8 +139,9 @@ header {
 
 /*Main content nav*/
 .sub-header {
+  background-color: white;
   position: relative;
-  padding: 3em 3em 0 3em;
+  padding: 2em;
   float: right;
   box-sizing: border-box;
   width: calc(100% - 14em);
@@ -138,8 +150,10 @@ header {
   font-weight: 400;
 }
 
+
 h1 {
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .h1-icons {
@@ -165,13 +179,17 @@ h1 {
 
 
 .location-icon {
+  margin-top: 0.5em;
+  font-size: 1em;
   color: #8C95A3;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 }
 
 .location-blue {
+  font-size: 1em;
   color: #49A2F3;
 }
 
@@ -188,20 +206,35 @@ h1 {
 }
 
 .sub {
-  width: 100%;
+  width: 85%;
   position: absolute;
   bottom: 2px;
+  padding-right: 10px;
 }
-
+/*Styling for my two badass graph sections*/
 .stats {
   background-color: #EDF2F6;
   box-sizing: border-box;
-  float: right;
-  width: calc(100% - 14em);
+  min-width: calc(100% - 14em);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  height: 20em;
-  border-bottom: 2px solid lightgray;
+  padding: 30px; 
+  min-height: 20em;
+  /*border-bottom: 2px solid lightgray;*/
+}
+
+.bar-graph {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 21em;
+  margin-bottom: 2em;
+}
+
+.bar {
+  width: 21em;
 }
 
 .circle-graphs {
@@ -209,15 +242,17 @@ h1 {
   flex-flow: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
-  /*width: 518px;*/
+  max-width: 576px;
+  min-width: 560px;
+  margin-bottom: 2em;
 }
 
 .circle {
-  width: 30%;
+  width: 12em;
 }
 
 .chart-text {
+  font-weight: 700;
   font-size: 1em;
 }
 
@@ -229,6 +264,7 @@ h1 {
 }
 
 .chart-label {
+  color: #8C95A3;
   font-size: 0.2em;
   text-transform: uppercase;
   text-anchor: middle;
@@ -239,19 +275,6 @@ h1 {
    stroke-linecap: round;
 }
 
-.bar-graph {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 40%;
-}
-
-.bar {
-  padding: 20px;
-  width: 80%;
-  /*width: 360px*/
-}
 .chart div {
   font: 10px sans-serif;
   background-color: #67B8BF;
@@ -272,18 +295,21 @@ h1 {
 .stats-button p {
   margin: 0.5em;
 }
-/*
-.gray-line,  {
-  text-align: center;
+
+.center-divide-button {
+  padding: 0.5em;
+  border-radius: 50%;
+  position: relative;
+  bottom: 55px;
+}
+
+.divide-button {
   display: flex;
-  justify-content: flex-end;
-  width: 90%;
-  border-bottom: 2px solid gray;
-  height: 20px;
-}*/
+  justify-content: center;
+  background-color: #EDF2F6;
+}
 
-
-/*Lower Section styles*/
+/*Styles for my totally rad table*/
 .bottom-content {
   background-color: #EDF2F6;
   padding: 1em;
@@ -297,19 +323,32 @@ table {
   color: #717D93;
   border-collapse: collapse;
   width: calc(100% - 25em);
+  border-radius: 5px;
 }
-
 
 td, th {
   font-size: 0.95em;
-  border-bottom: 2px solid #EDF2F6;
   text-align: left;
   padding: 1.5em;
+}
+
+td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 th {
   background-color: #717D93;
   color: white;
+}
+
+.th-left {
+  border-top-left-radius: 5px;
+}
+
+.th-right {
+  border-top-right-radius: 5px;
 }
 
 .edit-button {
@@ -333,14 +372,17 @@ th {
   width: 10em;
 }
 
-
+/*Styles for social media buttons and links*/
 .social-media {
   text-align: center
   color: #4E515D;
   background-color: #EDF2F6;
-  width: 18em;
+  width: 17em;
+  /*width: 9%;*/
   float: right;
 }
+
+
 
 .social-media-button {
   font-weight: 700;
@@ -349,6 +391,10 @@ th {
   width: 17em;
   padding: 1em;
   margin-bottom: 0.5em;
+}
+
+.media-buttons {
+  margin: 0;
 }
 
 .facebook {
@@ -397,7 +443,6 @@ th {
   display: inline-block;
   border-radius: 3px 0 0 3px;
   width: 14em
-    /*border-bottom: 2px solid gray;*/
 }
 
 .social-media p {
@@ -425,11 +470,8 @@ th {
   background-color: #4babb4;
 }
 
+/*Media queries*/
 @media (max-width: 1060px) {
-
-/*  .bottom-content {
-    flex-flow: column;
-  }*/
 
   table {
     width: 100%;
@@ -437,31 +479,30 @@ th {
 
   .media-buttons,
   .media-links {
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
   }
 
-  .social-media-button {
-    margin: 0.25em 0.5em 0 0.5em;
-  }
-
+  .social-media-button,
   .social-media-article {
-    margin: 0.25em 0.5em 0 0.5em;
+    margin-top: 0.5em;
   }
 
   .social-media {
-    width: 100%;
+    width: 96%;
     display: flex;
     flex-flow: column;
   }
 
-/*  .sub-header-links {
-    font-size: 0.90em;
-  }*/
-
 }
 
 @media (max-width: 910px) {
+
+  table {
+    /*width: 95%;*/
+    margin: 2%;
+  }
   
   aside {
     width: 5em;
@@ -480,23 +521,88 @@ th {
   .sub-header,
   .bottom-content,
   .stats {
-    width: 100%
+    width: 100%;
+  }
+
+  .bottom-content {
+    padding: 0;
   }
 
   .profile-pic {
-    /*border-bottom: 0px solid transparent;*/
     position: absolute;
     left: 1em;
     top: 1em;
     width: 3em;
   }
 
+  .aside-profile-pic {
+    border-bottom: 0;
+  }
 
-
-  .aside-profile-pic p,
-  .as  {
+  .pro-pic-name {
     display: none;
+  }
 
+
+
+  .stats {
+    justify-content: column;
+    align-items: column;
+  }
+
+  @media (max-width: 650px) {
+
+    .social-media-button span,
+    .header-add-friend,
+    .header-squares,
+    .header-calendar,
+    .social-media-article {
+      display: none;
+    }
+
+    .social-media-button {
+      margin-bottom: 1.5em;
+    }
+
+    .circle-graphs {
+      max-width: 320px;
+      min-width: 320px;
+      flex-flow: column;
+    }
+
+  }
+
+    @media (max-width: 435px) {
+
+    td {
+      white-space: nowrap;
+    }
+
+    .sub,
+    .h1-icons,
+    .header-text-input {
+      display: none;
+    }
+
+    .sub-header {
+      height: 10em;
+    }
+
+    .header-text-input2 {
+      display: block;
+      border: none;
+    }
+
+    header {
+      flex-direction: row-reverse;
+    }
+
+    .header-menu {
+      border-left: 0.5px solid lightgray;
+      border-right: 0;
+    }
+
+    }
   }
 
 }
