@@ -177,6 +177,9 @@ h1 {
   height: 1em;
 }
 
+.open-icon {
+  margin-right: 0.5em;
+}
 
 .location-icon {
   align-items: center;
@@ -210,7 +213,8 @@ h1 {
   position: absolute;
   width: 85%;
 }
-/*Styling for my two badass graph sections*/
+
+/*Styling for my two sick graph sections*/
 .stats {
   background-color: #EDF2F6;
   box-sizing: border-box;
@@ -358,11 +362,15 @@ th {
   display: flex;
   height: 2.5em;
   outline: none;
-  width: 4em;
+  width: 4.5em;
 }
 
 .edit-button:hover {
   background-color: #636e83;
+}
+
+.edit-pencil {
+  margin-right: 0.5em;
 }
 
 .table-left {
@@ -378,8 +386,6 @@ th {
   float: right;
   width: 17em;
 }
-
-
 
 .social-media-button {
   border-radius: 5px;
@@ -497,7 +503,6 @@ th {
 @media (max-width: 910px) {
 
   table {
-    /*width: 95%;*/
     margin: 2%;
   }
   
@@ -539,8 +544,6 @@ th {
   .pro-pic-name {
     display: none;
   }
-
-
 
   .stats {
     align-items: column;
