@@ -10,13 +10,13 @@ body {
 
 /*Left side navigation styles*/
 aside {
-  box-sizing: border-box;
-  float: left;
-  color: #67738B;
   background-color: #374050;
+  box-sizing: border-box;
+  color: #67738B;
   display: block;
-  width: 14em;
+  float: left;
   height: 170.5vh;
+  width: 14em;
 }
 
 .aside {
@@ -24,14 +24,14 @@ aside {
 }
 
 .aside-profile-pic {
-  text-align: center;
-  padding: 2em;
   border-bottom: 2px solid #2B3240;
+  padding: 2em;
+  text-align: center;
 }
 
 .profile-pic {
-  width: 90px;
   border-radius: 50%;
+  width: 90px;
 }
 
 h4 {
@@ -39,58 +39,58 @@ h4 {
 }
 
 .aside-btn {
-  border-left: 3px solid #374050;
-  display: flex;
   align-items: center;
+  border-left: 3px solid #374050;
+  color: #A2ACBD;
+  display: flex;
   font-weight: 700;
   padding: .5em;
   padding-left: 1.25em; 
-  color: #A2ACBD;
   text-decoration: none;
 }
 
 .aside-svg {
   height: 18px;
-  margin-right: .75em;
   margin-bottom: 3px;
+  margin-right: .75em;
 }
 
 .aside-btn:hover {
-  border-left: 3px solid white;
   background-color: #2B3240;
+  border-left: 3px solid white;
   color: white;
 }
 
 .check-box1:hover {
-  background-size: 30px;
   background-image: url("images/correct-symbol.svg");
+  background-size: 30px;
 }
 
 header {
-  background-color: white;
-  box-sizing: border-box;
-  float: right;
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-  height: 5em;
-  width: calc(100% - 14em);
+  background-color: white;
   border: 1px solid lightgray;
+  box-sizing: border-box;
+  display: flex;
+  float: right;
+  height: 5em;
+  justify-content: flex-start;
+  width: calc(100% - 14em);
 }
 
 .header {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
   border-left: .5px solid lightgray;
   height: 5em;
   width: 5em;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1.5em;
 }
 
 .header-menu {
+  background-image: url(images/four-horizontal-lines-with-down-arrow.svg);
   border-left: 0;
   border-right: .5px solid lightgray;
-  background-image: url(images/four-horizontal-lines-with-down-arrow.svg);
 }
 
 .header-menu:hover {
@@ -99,10 +99,10 @@ header {
 }
 
 .header-text-input {
-  outline: none;
   border: 0px;
-  margin-left: 3.5em;
   flex: 1;
+  margin-left: 3.5em;
+  outline: none;
 }
 
 .header-text-input2 {
@@ -140,14 +140,14 @@ header {
 /*Main content nav*/
 .sub-header {
   background-color: white;
-  position: relative;
-  padding: 2em;
-  float: right;
   box-sizing: border-box;
-  width: calc(100% - 14em);
-  height: 13em;
   color: #4E515D;
+  float: right;
   font-weight: 400;
+  height: 13em;
+  padding: 2em;
+  position: relative;
+  width: calc(100% - 14em);
 }
 
 
@@ -157,16 +157,16 @@ h1 {
 }
 
 .h1-icons {
-  margin-right: 0.75em;
-  font-weight: 700;
-  color: #4E515D;
-  text-decoration: none;
-  float: right;
-  display: inline-flex;
   align-items: center;
-  padding: .5em;
   border-radius: 25px 25px 25px 25px;
   border: 2px solid lightgray;
+  color: #4E515D;
+  display: inline-flex;
+  float: right;
+  font-weight: 700;
+  margin-right: 0.75em;
+  padding: .5em;
+  text-decoration: none;
   }
 
 .h1-icons:hover {
@@ -179,26 +179,25 @@ h1 {
 
 
 .location-icon {
-  margin-top: 0.5em;
-  font-size: 1em;
+  align-items: center;
   color: #8C95A3;
   display: flex;
+  font-size: 1em;
   justify-content: flex-start;
-  align-items: center;
-
+  margin-top: 0.5em;
 }
 
 .location-blue {
-  font-size: 1em;
   color: #49A2F3;
+  font-size: 1em;
 }
 
 .sub-header-links {
-  margin: 0.5%;
   border-bottom: 2px solid white;
-  text-decoration: none;
-  font-weight: 700;
   color: #8C95A3;
+  font-weight: 700;
+  margin: 0.5%;
+  text-decoration: none;
 }
 
 .sub-header-links:hover {
@@ -206,31 +205,30 @@ h1 {
 }
 
 .sub {
-  width: 85%;
-  position: absolute;
   bottom: 2px;
   padding-right: 10px;
+  position: absolute;
+  width: 85%;
 }
 /*Styling for my two badass graph sections*/
 .stats {
   background-color: #EDF2F6;
   box-sizing: border-box;
-  min-width: calc(100% - 14em);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 30px; 
   min-height: 20em;
-  /*border-bottom: 2px solid lightgray;*/
+  min-width: calc(100% - 14em);
+  padding: 30px; 
 }
 
 .bar-graph {
+  align-items: center;
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
-  align-items: center;
-  max-width: 21em;
   margin-bottom: 2em;
+  max-width: 21em;
 }
 
 .bar {
@@ -238,13 +236,13 @@ h1 {
 }
 
 .circle-graphs {
+  align-items: center;
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
-  align-items: center;
+  margin-bottom: 2em;
   max-width: 576px;
   min-width: 560px;
-  margin-bottom: 2em;
 }
 
 .circle {
@@ -252,8 +250,8 @@ h1 {
 }
 
 .chart-text {
-  font-weight: 700;
   font-size: 1em;
+  font-weight: 700;
 }
 
 .chart-number {
@@ -266,8 +264,8 @@ h1 {
 .chart-label {
   color: #8C95A3;
   font-size: 0.2em;
-  text-transform: uppercase;
   text-anchor: middle;
+  text-transform: uppercase;
   transform: translateY(0.7em);
 }
 
@@ -276,20 +274,20 @@ h1 {
 }
 
 .chart div {
-  font: 10px sans-serif;
   background-color: #67B8BF;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
   color: white;
+  font: 10px sans-serif;
+  margin: 1px;
+  padding: 3px;
+  text-align: right;
 }
 
 
 .stats-button {
-  margin: 0;
-  border: 2px solid lightgray;
-  border-radius: 20px;
   background-color: white;
+  border-radius: 20px;
+  border: 2px solid lightgray;
+  margin: 0;
 }
 
 .stats-button p {
@@ -297,39 +295,39 @@ h1 {
 }
 
 .center-divide-button {
-  padding: 0.5em;
   border-radius: 50%;
-  position: relative;
   bottom: 55px;
+  padding: 0.5em;
+  position: relative;
 }
 
 .divide-button {
+  background-color: #EDF2F6;
   display: flex;
   justify-content: center;
-  background-color: #EDF2F6;
 }
 
 /*Styles for my totally rad table*/
 .bottom-content {
   background-color: #EDF2F6;
-  padding: 1em;
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
+  padding: 1em;
 }
 
 table {
   background-color: white;
-  color: #717D93;
   border-collapse: collapse;
-  width: calc(100% - 25em);
   border-radius: 5px;
+  color: #717D93;
+  width: calc(100% - 25em);
 }
 
 td, th {
   font-size: 0.95em;
-  text-align: left;
   padding: 1.5em;
+  text-align: left;
 }
 
 td {
@@ -352,15 +350,15 @@ th {
 }
 
 .edit-button {
-  height: 2.5em;
-  width: 4em;
-  border-radius: 2px;
-  display: flex;
   align-items: center;
-  color: white;
-  outline: none;
-  border: none;
   background-color: #808B9E;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  display: flex;
+  height: 2.5em;
+  outline: none;
+  width: 4em;
 }
 
 .edit-button:hover {
@@ -374,23 +372,22 @@ th {
 
 /*Styles for social media buttons and links*/
 .social-media {
-  text-align: center
-  color: #4E515D;
   background-color: #EDF2F6;
-  width: 17em;
-  /*width: 9%;*/
+  color: #4E515D;
+  text-align: center;
   float: right;
+  width: 17em;
 }
 
 
 
 .social-media-button {
-  font-weight: 700;
   border-radius: 5px;
   color: white;
-  width: 17em;
-  padding: 1em;
+  font-weight: 700;
   margin-bottom: 0.5em;
+  padding: 1em;
+  width: 17em;
 }
 
 .media-buttons {
@@ -422,12 +419,12 @@ th {
 }
 
 .social-media-links {
+  align-items: center;
+  color: #4E515D;
+  display: flex;
   font-weight: 700;
   margin-top: 2em;
   text-decoration: none;
-  color: #4E515D;
-  display: flex;
-  align-items: center;
 }
 
 .social-media img {
@@ -435,35 +432,35 @@ th {
 }
 
 .social-media input {
+  border-radius: 3px 0 0 3px;
+  border: none;
   box-shadow: 0px 0px 2px 0px rgba(150,148,150,1);
+  display: inline-block;
   font-size: 0.95em;
   height: 2em;
-  border: none;
   outline: none;
-  display: inline-block;
-  border-radius: 3px 0 0 3px;
   width: 14em
 }
 
 .social-media p {
   color: #717D93;
-  max-width: 31ch;
   font-size: 0.95em;
+  max-width: 31ch;
 }
 
 .social-media-article {
-  width: 17em;
   border-bottom: 2px solid lightgray;
+  width: 17em;
 }
 
 .copy-button {
-  box-shadow: 0px 0px 2px 0px rgba(150,148,150,1);
-  margin-bottom: 2.5em;
-  border: none;
-  color: white;
   background-color: #67B8BF;
   border-radius: 0 3px 3px 0;
-  height: 28px
+  border: none;
+  box-shadow: 0px 0px 2px 0px rgba(150,148,150,1);
+  color: white;
+  height: 28px;
+  margin-bottom: 2.5em;
 }
 
 .copy-button:hover {
@@ -479,9 +476,9 @@ th {
 
   .media-buttons,
   .media-links {
-    margin-top: 0;
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
   }
 
   .social-media-button,
@@ -490,9 +487,9 @@ th {
   }
 
   .social-media {
-    width: 96%;
     display: flex;
     flex-flow: column;
+    width: 96%;
   }
 
 }
@@ -505,13 +502,13 @@ th {
   }
   
   aside {
-    width: 5em;
     height: 5em;
+    width: 5em;
   }
 
   .aside {
-    padding: 0;
     display: none;
+    padding: 0;
   }
 
   header {
@@ -529,8 +526,8 @@ th {
   }
 
   .profile-pic {
-    position: absolute;
     left: 1em;
+    position: absolute;
     top: 1em;
     width: 3em;
   }
@@ -546,8 +543,8 @@ th {
 
 
   .stats {
-    justify-content: column;
     align-items: column;
+    justify-content: column;
   }
 
   @media (max-width: 650px) {
@@ -565,9 +562,9 @@ th {
     }
 
     .circle-graphs {
+      flex-flow: column;
       max-width: 320px;
       min-width: 320px;
-      flex-flow: column;
     }
 
   }
@@ -589,8 +586,8 @@ th {
     }
 
     .header-text-input2 {
-      display: block;
       border: none;
+      display: block;
     }
 
     header {
